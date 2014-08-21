@@ -1,0 +1,92 @@
+use_xft yes
+xftfont Tahoma:size=8
+xftalpha 0.8
+text_buffer_size 2048
+update_interval 360
+total_run_times 0
+own_window yes
+own_window_transparent yes
+own_window_type override
+double_buffer yes
+minimum_size 340 0
+draw_shades no
+draw_outline no
+draw_borders no
+stippled_borders 0
+border_margin 5
+border_width 1
+default_color C9C5BD
+own_window_colour white
+alignment bottom_left
+gap_x 40
+gap_y 35
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+net_avg_samples 2
+override_utf8_locale yes
+use_spacer none
+
+TEXT
+${voffset 30}
+${goto 30}${font Ubuntu:size=14}${execi 3600 /home/captain/conky/weather2.py -d 0 datetime}${font}
+${goto 60}${font Weather:size=50}${execi 3600 /home/captain/conky/weather2.py -d 0 ccloud_cover}${font}
+${goto 30}${font Ubuntu:size=8}Облачность: ${execi 3600 /home/captain/conky/weather2.py -d 0 cloud_cover}${font}
+${voffset 2}
+${goto 50}${font Weather:size=38}y${font}
+${voffset -58}
+${goto 70}${font Ubuntu:size=26}${execi 3600 /home/captain/conky/weather2.py -d 0 temperature}${font}
+${voffset -120}
+${goto 220}${font ConkyWindNESW:size=50}${execi 3600 /home/captain/conky/weather2.py -d 0 wwind_direction}${font}
+${voffset -15}
+${goto 230}${font Ubuntu:size=10}${execi 3600 /home/captain/conky/weather2.py -d 0 wind_velocity}${font}
+${voffset 0}
+${goto 200}Давление:${font Ubuntu:size=9}${execi 3600 /home/captain/conky/weather2.py -d 0 pressure}${font}
+${goto 200}Влажность:${font Ubuntu:size=9}${execi 3600 /home/captain/conky/weather2.py -d 0 humidity}${font}
+${voffset 0}
+${goto 30}${font Ubuntu:size=11}${execi 3600 /home/captain/conky/weather2.py -d 1 datetime}${font}
+${goto 60}${font Weather:size=45}${execi 3600 /home/captain/conky/weather2.py -d 1 ccloud_cover}${font}
+${goto 30}${font Ubuntu:size=8}Облачность: ${execi 3600 /home/captain/conky/weather2.py -d 1 cloud_cover}${font}
+${voffset 2}
+${goto 50}${font Weather:size=28}y${font}
+${voffset -48}
+${goto 70}${font Ubuntu:size=20}${execi 3600 /home/captain/conky/weather2.py -d 1 temperature}${font}
+${voffset -110}
+${goto 230}${font ConkyWindNESW:size=35}${execi 3600 /home/captain/conky/weather2.py -d 1 wwind_direction}${font}
+${voffset -12}
+${goto 240}${font Ubuntu:size=8}${execi 3600 /home/captain/conky/weather2.py -d 1 wind_velocity}${font}
+${voffset -10}
+${goto 200}Давление:${font Ubuntu:size=8}${execi 3600 /home/captain/conky/weather2.py -d 1 pressure}${font}
+${goto 200}Влажность:${font Ubuntu:size=8}${execi 3600 /home/captain/conky/weather2.py -d 1 humidity}%${font}
+${voffset 8}
+${goto 30}${font Ubuntu:size=11}${execi 3600 /home/captain/conky/weather2.py -d 2 datetime}${font}
+${voffset -5}
+${goto 60}${font Weather:size=45}${execi 3600 /home/captain/conky/weather2.py -d 2 ccloud_cover}${font}
+${goto 30}${font Ubuntu:size=8}Облачность: ${execi 3600 /home/captain/conky/weather2.py -d 2 cloud_cover}${font}
+${voffset 2}
+${goto 50}${font Weather:size=28}y${font}
+${voffset -48}
+${goto 70}${font Ubuntu:size=20}${execi 3600 /home/captain/conky/weather2.py -d 2 temperature}${font}
+${voffset -110}
+${goto 230}${font ConkyWindNESW:size=35}${execi 3600 /home/captain/conky/weather2.py -d 2 wwind_direction}${font}
+${voffset -12}
+${goto 240}${font Ubuntu:size=8}${execi 3600 /home/captain/conky/weather2.py -d 2 wind_velocity}${font}
+${voffset -10}
+${goto 200}Давление:${font Ubuntu:size=8}${execi 3600 /home/captain/conky/weather2.py -d 2 pressure}${font}
+${goto 200}Влажность:${font Ubuntu:size=8}${execi 3600 /home/captain/conky/weather2.py -d 2 humidity}${font}
+${voffset 8}
+${goto 30}${font Ubuntu:size=11}${execi 3600 /home/captain/conky/weather2.py -d 3 datetime}${font}
+${voffset -5}
+${goto 60}${font Weather:size=45}${execi 3600 /home/captain/conky/weather2.py -d 3 ccloud_cover}${font}
+${goto 30}${font Ubuntu:size=8}Облачность: ${execi 3600 /home/captain/conky/weather2.py -d 3 cloud_cover}${font}
+${voffset 2}
+${goto 50}${font Weather:size=28}y${font}
+${voffset -48}
+${goto 70}${font Ubuntu:size=20}${execi 3600 /home/captain/conky/weather2.py -d 3 temperature}${font}
+${voffset -110}
+${goto 230}${font ConkyWindNESW:size=35}${execi 3600 /home/captain/conky/weather2.py -d 3 wwind_direction}${font}
+${voffset -12}
+${goto 240}${font Ubuntu:size=8}${execi 3600 /home/captain/conky/weather2.py -d 3 wind_velocity}${font}
+${voffset -10}
+${goto 200}Давление:${font Ubuntu:size=8}${execi 3600 /home/captain/conky/weather2.py -d 3 pressure}${font}
+${goto 200}Влажность:${font Ubuntu:size=8}${execi 3600 /home/captain/conky/weather2.py -d 3 humidity}${font}
